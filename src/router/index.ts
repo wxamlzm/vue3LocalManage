@@ -9,6 +9,11 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
+    {
+      path: '/video',
+      name: 'VideoManage',
+      component: () => import('@/views/VideoManage/VideoManage.vue'),
+    },
   ],
 })
 
